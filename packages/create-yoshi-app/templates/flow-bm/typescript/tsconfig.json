@@ -16,7 +16,7 @@
   "include": [
     "./__tests__/**/*.ts",
     "./src/**/*.*",
-    "./components/**/*.*",
+    "./exported-components/**/*.*",
     "./pages/**/*.*",
     "./methods/**/*.*"
   ],

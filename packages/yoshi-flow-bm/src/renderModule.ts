@@ -4,7 +4,7 @@ import { FlowBMModel } from './createFlowBMModel';
 
 const generateModuleCode = ({
   moduleId,
-  components,
+  exportedComponents,
   methods,
   pages,
   moduleInitPath,
@@ -25,8 +25,8 @@ createModule({
     `,
     )}
   ],
-  components: [
-    ${components.map(
+  exportedComponents: [
+    ${exportedComponents.map(
       ({ componentId, componentPath }) => `
       {
         componentId: '${componentId}',

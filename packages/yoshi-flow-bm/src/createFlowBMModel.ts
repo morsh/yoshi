@@ -2,11 +2,11 @@ import path from 'path';
 import globby from 'globby';
 import { getProjectArtifactId } from 'yoshi-helpers/build/utils';
 
-export interface ComponentModel {
+export interface ExportedComponentModel {
   componentId: string;
   componentPath: string;
 }
-export interface PageModel extends ComponentModel {
+export interface PageModel extends ExportedComponentModel {
   route: string;
 }
 export interface MethodModel {
@@ -17,7 +17,7 @@ export interface MethodModel {
 export interface FlowBMModel {
   moduleId: string;
   pages: Array<PageModel>;
-  components: Array<ComponentModel>;
+  exportedComponents: Array<ExportedComponentModel>;
   methods: Array<MethodModel>;
   moduleInitPath?: string;
   localePath: string;
@@ -26,7 +26,7 @@ export interface FlowBMModel {
 
 const exts = '{js,jsx,ts,tsx}';
 const pagesPattern = `pages/**/*.${exts}`;
-const componentsPattern = `components/**/*.${exts}`;
+const componentsPattern = `exported-components/**/*.${exts}`;
 const methodsPattern = `methods/**/*.${exts}`;
 const moduleInitPattern = `moduleInit.${exts}`;
 const translationsPattern = 'translations';
@@ -51,10 +51,14 @@ export default function createFlowBMModel(cwd = process.cwd()): FlowBMModel {
     route: '', // TODO: Deferred to the "render ERB" feature, unnecessary until then
   }));
 
-  const components = globFiles(componentsPattern).map(componentPath => ({
-    componentId: `${moduleId}.components.${path.parse(componentPath).name}`,
-    componentPath,
-  }));
+  const exportedComponents = globFiles(componentsPattern).map(
+    componentPath => ({
+      componentId: `${moduleId}.exported-components.${
+        path.parse(componentPath).name
+      }`,
+      componentPath,
+    }),
+  );
 
   const methods = globFiles(methodsPattern).map(methodPath => ({
     methodId: `${moduleId}.methods.${path.parse(methodPath).name}`,
@@ -67,7 +71,7 @@ export default function createFlowBMModel(cwd = process.cwd()): FlowBMModel {
   return {
     moduleId,
     pages,
-    components,
+    exportedComponents,
     methods,
     localePath,
     moduleConfig: {},

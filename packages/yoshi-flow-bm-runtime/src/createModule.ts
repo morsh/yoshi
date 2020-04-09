@@ -19,7 +19,7 @@ interface ModuleOptions {
     componentId: string;
     loadComponent(): Promise<ComponentType<any>>;
   }>;
-  components: Array<{
+  exportedComponents: Array<{
     componentId: string;
     loadComponent(): Promise<ComponentType<any>>;
   }>;
@@ -39,7 +39,7 @@ interface ModuleOptions {
 export default function createModule({
   moduleId,
   pages,
-  components,
+  exportedComponents,
   methods,
   loadLocale,
   moduleInit,
@@ -96,7 +96,7 @@ export default function createModule({
         );
       });
 
-      components.forEach(({ componentId, loadComponent }) => {
+      exportedComponents.forEach(({ componentId, loadComponent }) => {
         this.registerComponentWithModuleParams(
           componentId,
           ReactLoadableComponent(componentId, async () => {
