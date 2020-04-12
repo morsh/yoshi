@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@storybook/react": "^5.2.8",
-    "storybook": "^5.3.7"
+    "storybook": "^5.3.7",
+    "babel-loader": "^8.0.0"
   },
   "peerDependencies": {
     "react": "^16.12.0",

@@ -6,7 +6,7 @@ import {
   useTranslate,
   useSentry,
 } from 'yoshi-flow-bm-runtime';
-import TodoList from '../src/TodoList';
+import TodoList from '../TodoList';
 
 const Todo: FC = () => {
   const fedops = useFedops();

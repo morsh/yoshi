@@ -15,10 +15,7 @@
   },
   "include": [
     "./__tests__/**/*.ts",
-    "./src/**/*.*",
-    "./exported-components/**/*.*",
-    "./pages/**/*.*",
-    "./methods/**/*.*"
+    "./src/**/*.*"
   ],
   "files": [
     "./jest-yoshi.config.js",

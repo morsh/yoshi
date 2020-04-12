@@ -8,11 +8,11 @@
   "author": "Amit Dahan <amitda@wix.com>",
   "dependencies": {
     "@sentry/browser": "5.7.1",
-    "@types/react": "16.9.15",
+    "@types/react": "16.9.32",
     "@wix/business-manager-api": "1.0.994",
     "@wix/fedops-logger": "5.9.1",
     "@wix/wix-axios-config": "2.0.2259",
-    "@wix/wix-experiments": "3.0.439",
+    "@wix/wix-experiments": "3.0.441",
     "@wix/wix-experiments-react": "3.0.525",
     "axios": "0.19.2",
     "i18next": "8.4.3",

@@ -6,7 +6,10 @@ export {
   default as FedopsProvider,
   FedopsProviderProps,
 } from './hooks/FedopsProvider';
-export { default as ModuleProvider } from './hooks/ModuleProvider';
+export {
+  default as ModuleProvider,
+  IBMModuleParams,
+} from './hooks/ModuleProvider';
 export { default as SentryProvider } from './hooks/SentryProvider';
 export { default as TranslationProvider } from './hooks/TranslationProvider';
 export { default as useExperiments } from './hooks/useExperiments';

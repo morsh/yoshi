@@ -25,10 +25,10 @@ export interface FlowBMModel {
 }
 
 const exts = '{js,jsx,ts,tsx}';
-const pagesPattern = `pages/**/*.${exts}`;
-const componentsPattern = `exported-components/**/*.${exts}`;
-const methodsPattern = `methods/**/*.${exts}`;
-const moduleInitPattern = `moduleInit.${exts}`;
+const pagesPattern = `src/pages/**/*.${exts}`;
+const componentsPattern = `src/exported-components/**/*.${exts}`;
+const methodsPattern = `src/methods/**/*.${exts}`;
+const moduleInitPattern = `src/moduleInit.${exts}`;
 const translationsPattern = 'translations';
 
 export default function createFlowBMModel(cwd = process.cwd()): FlowBMModel {
