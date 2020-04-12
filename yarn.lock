@@ -3393,17 +3393,10 @@
     "@babel/parser" "^7.1.0"
     "@babel/types" "^7.0.0"
 
-"@types/babel__traverse@*", "@types/babel__traverse@^7.0.6":
+"@types/babel__traverse@*", "@types/babel__traverse@7.0.10", "@types/babel__traverse@^7.0.6":
   version "7.0.10"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/babel__traverse/-/babel__traverse-7.0.10.tgz#d9a99f017317d9b3d1abc2ced45d3bca68df0daf"
   integrity sha1-2amfAXMX2bPRq8LO1F07ymjfDa8=
-  dependencies:
-    "@babel/types" "^7.3.0"
-
-"@types/babel__traverse@7.0.9":
-  version "7.0.9"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/babel__traverse/-/babel__traverse-7.0.9.tgz#be82fab304b141c3eee81a4ce3b034d0eba1590a"
-  integrity sha1-voL6swSxQcPu6BpM47A00OuhWQo=
   dependencies:
     "@babel/types" "^7.3.0"
 
@@ -3550,6 +3543,16 @@
   version "4.17.4"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/express/-/express-4.17.4.tgz#e78bf09f3f530889575f4da8a94cd45384520aac"
   integrity sha1-54vwnz9TCIlXX02oqUzUU4RSCqw=
+  dependencies:
+    "@types/body-parser" "*"
+    "@types/express-serve-static-core" "*"
+    "@types/qs" "*"
+    "@types/serve-static" "*"
+
+"@types/express@4.17.6":
+  version "4.17.6"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/express/-/express-4.17.6.tgz#6bce49e49570507b86ea1b07b806f04697fac45e"
+  integrity sha1-a85J5JVwUHuG6hsHuAbwRpf6xF4=
   dependencies:
     "@types/body-parser" "*"
     "@types/express-serve-static-core" "*"
@@ -23080,10 +23083,10 @@ screenshot-reporter@1.1.328:
   dependencies:
     mkdirp "~0.3.5"
 
-screenshot-reporter@1.1.329:
-  version "1.1.329"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/screenshot-reporter/-/screenshot-reporter-1.1.329.tgz#c445479dde51780a7ae34745fcc501887c588ce4"
-  integrity sha1-xEVHnd5ReAp640dF/MUBiHxYjOQ=
+screenshot-reporter@1.1.330:
+  version "1.1.330"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/screenshot-reporter/-/screenshot-reporter-1.1.330.tgz#31bb79295bc4a93bc6932347d57637d3c594d473"
+  integrity sha1-Mbt5KVvEqTvGkyNH1XY308WU1HM=
   dependencies:
     mkdirp "~0.3.5"
 
@@ -25503,6 +25506,11 @@ type-fest@0.12.0, type-fest@^0.12.0:
   version "0.12.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/type-fest/-/type-fest-0.12.0.tgz#f57a27ab81c68d136a51fd71467eff94157fa1ee"
   integrity sha1-9Xonq4HGjRNqUf1xRn7/lBV/oe4=
+
+type-fest@0.13.1, type-fest@^0.13.0:
+  version "0.13.1"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/type-fest/-/type-fest-0.13.1.tgz#0172cb5bce80b0bd542ea348db50c7e21834d934"
+  integrity sha1-AXLLW86AsL1ULqNI21DH4hg02TQ=
 
 type-fest@^0.10.0:
   version "0.10.0"

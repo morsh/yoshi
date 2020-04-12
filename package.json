@@ -139,7 +139,7 @@
     "tslint": "^5.16.0",
     "tslint-plugin-wix-style-react": "^1.0.6",
     "tslint-react-hooks": "^2.1.0",
-    "type-fest": "^0.12.0",
+    "type-fest": "^0.13.0",
     "typescript": "3.7.5",
     "verdaccio": "^4.3.5",
     "vfile-message": "^2.0.2",
